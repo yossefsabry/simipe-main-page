@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(55, 181, 235, 0.655),
+    #2d5068a3,
+    #545454db,
+    #343123c4
+  );
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.navbar {
+  padding: 0px 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  background-color: transparent;
+  width: 100%;
+  height: 15vh;
+}
+.logo {
+  width: 10%;
+}
+
+.logo h2 {
+  font-size: 3rem;
+  color: white;
+  text-transform: capitalize;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul il {
+  margin-right: 4rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  padding: 0.6rem 2.2rem;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+nav ul il:active {
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+
+il.active {
+  border: 1px solid white;
+}
+
+.container {
+  padding: 3rem 13rem;
+}
+.section_one {
+  display: flex;
+}
+
+.section_one .text h2 {
+  width: fit-content;
+  font-size: 6rem;
+  padding-top: 11rem;
+  padding-bottom: 3rem;
+}
+.section_one .text p {
+  text-transform: capitalize;
+  padding: 1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+button {
+  padding: 1.1rem 3rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid white;
+  font-size: 0.9rem;
+  transition: all 0.5s;
+  margin: 1rem 0rem;
+}
+button:hover {
+  color: white;
+  background-color: transparent;
+  transform: scale(1.1);
+  border-radius: 1rem;
+}
+
+.image_1 {
+  width: 22rem;
+  position: relative;
+  height: 10rem;
+}
+
+.image_1 img {
+  width: 20rem;
+  margin: 0rem 5rem;
+  position: relative;
+  filter: grayscale(100%);
+  border-bottom-right-radius: 80%;
+  border-top-left-radius: 80%;
+
+  transition: all 1s;
+}
+.image_1 img:hover {
+  filter: grayscale(0%);
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 20%;
+}
